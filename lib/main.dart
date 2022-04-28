@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:shamo/pages/detail_chat.dart';
 import 'package:shamo/pages/home/main_page.dart';
 import 'package:shamo/pages/sign_in_page.dart';
 import 'package:shamo/pages/sign_up_page.dart';
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
         '/sign-in': (context) => SignInPage(),
         '/sign-up': (context) => SignUpPage(),
         '/home': (context) => MainPage(),
+        '/detail-chat': (context) => DetailChatPage(),
       }, //Manggil class dari file splash_page.dart
     );
   }
