@@ -62,9 +62,11 @@ class ChatBubble extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: 20,
+              height: 13,
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 OutlinedButton(
                   onPressed: () {},
@@ -75,7 +77,6 @@ class ChatBubble extends StatelessWidget {
                   style: OutlinedButton.styleFrom(
                     padding: EdgeInsets.symmetric(
                       horizontal: 14,
-                      vertical: 18,
                     ),
                     side: BorderSide(
                       color: primaryColor,
@@ -100,7 +101,6 @@ class ChatBubble extends StatelessWidget {
                   style: TextButton.styleFrom(
                       padding: EdgeInsets.symmetric(
                         horizontal: 14,
-                        vertical: 18,
                       ),
                       backgroundColor: primaryColor,
                       shape: RoundedRectangleBorder(

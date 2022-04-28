@@ -54,7 +54,7 @@ class ProfilePage extends StatelessWidget {
                   color: primaryColor,
                   onPressed: () {
                     // Navigator.pushNamed(context, '/sign-in');
-                    Navigator.pop(context);
+                    Navigator.pushNamedAndRemoveUntil(context, '/sign-in', (route) => false);
                   },
                   tooltip: 'Logout',
                 ),
