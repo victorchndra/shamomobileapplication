@@ -20,10 +20,9 @@ class ProfilePage extends StatelessWidget {
                   width: 60,
                   height: 60,
                   decoration: BoxDecoration(shape: BoxShape.circle, color: primaryColor),
-                  child: Icon(
-                    Icons.person,
-                    size: 45,
-                    color: Colors.white,
+                  child: Image.asset(
+                    'assets/image_profile.png',
+                    width: 45,
                   ),
                 ),
                 SizedBox(width: 16),
@@ -100,7 +99,12 @@ class ProfilePage extends StatelessWidget {
                   fontWeight: bold,
                 ),
               ),
-              menuItem('Ubah profil'),
+              GestureDetector(
+                child: menuItem('Ubah profil'),
+                onTap: () {
+                  Navigator.pushNamed(context, '/edit-profile');
+                },
+              ),
               menuItem('Pesanan anda'),
               menuItem('Bantuan'),
               SizedBox(height: 20),

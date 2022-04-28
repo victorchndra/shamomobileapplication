@@ -2,11 +2,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:shamo/pages/detail_chat.dart';
+import 'package:shamo/pages/edit_profile_page.dart';
 import 'package:shamo/pages/home/main_page.dart';
 import 'package:shamo/pages/sign_in_page.dart';
 import 'package:shamo/pages/sign_up_page.dart';
 import 'package:shamo/pages/splash_page.dart';
-import 'theme.dart';
 
 void main() => runApp(const MyApp()); //untuk menjalankan class MyApp
 
@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
         '/sign-up': (context) => SignUpPage(),
         '/home': (context) => MainPage(),
         '/detail-chat': (context) => DetailChatPage(),
+        '/edit-profile': (context) => EditProfilePage(),
       }, //Manggil class dari file splash_page.dart
     );
   }
